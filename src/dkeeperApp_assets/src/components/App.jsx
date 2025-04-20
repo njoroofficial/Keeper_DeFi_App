@@ -3,12 +3,16 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Note from "./Note";
 import CreateArea from "./CreateArea";
+// getting the dkeeperApp canister
+import { dkeeperApp } from "../../../declarations/dkeeperApp";
 
 function App() {
   const [notes, setNotes] = useState([]);
 
   function addNotes(text) {
     setNotes((prevNotes) => {
+      // Call the dkeeperApp canister to create a note
+      dkeeperApp.createNote(text.title, text.content);
       return [...prevNotes, text];
     });
   }
