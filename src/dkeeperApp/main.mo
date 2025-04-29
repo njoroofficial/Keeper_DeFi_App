@@ -1,6 +1,6 @@
 import Debug "mo:base/Debug";
 import List "mo:base/List";
-
+import Nat "mo:base/Nat";
 
 actor DKeeper{
   // create a datatype to hold user notes
@@ -27,5 +27,14 @@ actor DKeeper{
   public query func getNotes() : async [Note] {
     return List.toArray(notes);
   };
+
+  // function to delete a note
+  public func deleteNote(id : Nat) {
+    let frontList = List.take(notes, id);
+    let backList = List.drop(notes, id + 1);
+    notes := List.append(frontList, backList)
+
+  }
 }
 
+ 
