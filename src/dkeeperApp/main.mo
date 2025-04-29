@@ -9,7 +9,7 @@ actor DKeeper{
     content : Text;
   };
   // create a list to hold the notes
-  var notes : List.List<Note> = List.nil<Note>();
+  stable var notes : List.List<Note> = List.nil<Note>();
 
   // create a function to add a note to the list
   public func createNote(titleText : Text, contentText : Text){
