@@ -1,16 +1,19 @@
 # dkeeperApp
 
-Welcome to your new dkeeperApp project and to the internet computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
+This is a simple project that demonstrates how to use the DFINITY SDK to create a decentralized application (dapp) on the Internet Computer. The project is built using Motoko and JavaScript, and it includes a simple frontend that interacts with the backend canisters.
 
-To get started, you might want to explore the project directory structure and the default configuration file. Working with this project in your development environment will not affect any production deployment or identity tokens.
+## Prerequisites
+To run this project, you need to have the following software installed on your machine:
+- [Node.js](https://nodejs.org/en/download/) (version 14 or later)
+- [DFX](https://internetcomputer.org/docs/current/developers-guide/install-upgrade-remove/) (version 0.10.0 or later)
+- [Git](https://git-scm.com/downloads) (for cloning the repository)
+- [Visual Studio Code](https://code.visualstudio.com/) (or any other code editor of your choice)
+- [Motoko](https://internetcomputer.org/docs/current/motoko/motoko-intro/) (for writing smart contracts)
+- [Candid](https://internetcomputer.org/docs/current/candid/candid-intro/) (for defining the interface of your smart contracts)
+- [Cypress](https://www.cypress.io/) (for end-to-end testing)
+- [React](https://reactjs.org/) (for building the frontend)
+- [Webpack](https://webpack.js.org/) (for bundling the frontend code)
 
-To learn more before you start working with dkeeperApp, see the following documentation available online:
-
-- [Quick Start](https://sdk.dfinity.org/docs/quickstart/quickstart-intro.html)
-- [SDK Developer Tools](https://sdk.dfinity.org/docs/developers-guide/sdk-guide.html)
-- [Motoko Programming Language Guide](https://sdk.dfinity.org/docs/language-guide/motoko.html)
-- [Motoko Language Quick Reference](https://sdk.dfinity.org/docs/language-guide/language-manual.html)
-- [JavaScript API Reference](https://erxue-5aaaa-aaaab-qaagq-cai.raw.ic0.app)
 
 If you want to start working on your project right away, you might want to try the following commands:
 
